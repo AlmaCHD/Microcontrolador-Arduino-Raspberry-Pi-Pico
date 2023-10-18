@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<center><tittle> Rasberry Micro </tittle></center>
+Los pines de alimentación se utilizan para alimentar el pico desde la fuente de alimentación o para alimentar los sensores y periféricos desde el pico.
+
+El Pi Pico se puede alimentar a través de un cable USB (a través de VBUS) o mediante una batería u otras fuentes (a través de VSYS), cuando ambas entradas están conectadas juntas, la entrada con mayor potencial suministra la energía. Para conectar 2 fuentes, debe conectarlas a VSYS en serie con un diodo Schottky.
+
+VBUS	40	Es la entrada de 5 V del puerto micro-USB; si no hay un micro-USB conectado al pico, no habrá energía para el VBUS.
+
+VSYS	39	Es el bus principal del sistema el que suministra la salida de 3,3 V al microprocesador RP2040 y otros pines IO. VSYS alimenta energía al RT6150 SMPS que genera una salida fija de 3.3V.
+
+3V3_ES	37	es el pin habilitado integrado, habilita la fuente de alimentación de 3,3 V en la placa pico, se puede utilizar externamente para encender o apagar el pico.
+
+3V3(Fuera)	36	Es el pin de suministro del pin principal del RP2040 y su IO es generado por el SMPS, por lo que este pin se puede utilizar para habilitar el circuito de salida. La corriente máxima permitida es 300 mA.
