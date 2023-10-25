@@ -21,10 +21,20 @@ es el pin habilitado integrado, habilita la fuente de alimentación de 3,3 V en 
 Es el pin de suministro del pin principal del RP2040 y su IO es generado por el SMPS, por lo que este pin se puede utilizar para habilitar el circuito de salida. La corriente máxima permitida es 300 mA. <br>
 <br>
 GND:	3,8,13,18,23,28,33,38	<br>
-Todos los pines de tierra de las placas están interconectados. Todos los dispositivos, periféricos y sensores están conectados a los pines de tierra para cerrar el circuito eléctrico y lograr una tierra de referencia común en todo el circuito. El tablero tiene un total de 9 pines de tierra. 8 en GPIO y 1 para depuración
+Todos los pines de tierra de las placas están interconectados. Todos los dispositivos, periféricos y sensores están conectados a los pines de tierra para cerrar el circuito eléctrico y lograr una tierra de referencia común en todo el circuito. El tablero tiene un total de 9 pines de tierra. 8 en GPIO y 1 para depuración<br>
 <br>
 AGND:	33 <br>
-También conocido como tierra analógica. Está destinado al voltaje de referencia para los ADC y DAC. Es para la referencia de tierra para GPIO26-29, un plano de tierra analógico separado corre debajo de estas señales y termina en este pin. En ausencia de un ADC o ADC, este pin actúa como tierra digital.
+También conocido como tierra analógica. Está destinado al voltaje de referencia para los ADC y DAC. Es para la referencia de tierra para GPIO26-29, un plano de tierra analógico separado corre debajo de estas señales y termina en este pin. En ausencia de un ADC o ADC, este pin actúa como tierra digital.<br>
 <br>
-Número de pin del punto de prueba	                 Función
-
+TP1:	Ground <br>
+TP2:	USB DM <br>
+TP3:	USB DP <br>
+TP4:	Pin GPIO23/SMPS PS (no para usar) <br>
+TP5:	GPIO25/LED (no para usar) <br>
+TP6:	BOOTSEL <br>
+<br>
+Estos pines se pueden utilizar para fines tales como si la placa se utiliza como módulos de montaje en superficie. Se pueden utilizar TP1, TP2 y TP3 en lugar de micro-USB. TP6 se ​​puede utilizar para llevar el sistema al modo de programación USB de almacenamiento masivo (cortándolo al nivel bajo durante el encendido). TP4 y TP5 no están destinados a ser utilizados en absoluto. <br>
+<br>
+Tiene un pin adicional llamado Ejecutar. <br>
+<br>
+RUN : es un pin habilitado para RP2040. También se puede utilizar como reinicio del microcontrolador RP2040.
