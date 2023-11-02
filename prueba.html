@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="square" onclick="mostrarDialog()">Cuadrado</div>
+  <div class="dialog" id="dialog">
+    <p>Este es el contenido del diálogo.</p>
+    <button onclick="cerrarDialog()">Cerrar</button>
+  </div>
+
+  <script>
+    function mostrarDialog() {
+      var dialog = document.getElementById('dialog');
+      dialog.style.display = 'block';
+    }
+
+    function cerrarDialog() {
+      var dialog = document.getElementById('dialog');
+      dialog.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
